@@ -55,7 +55,6 @@ class Sudoku_Grid:
                 pygame.display.update()
                 pygame.time.delay(75)
 
-
     def update_model(self):
         self.model = [[self.squares[i][j].value for j in range(self.cols)] for i in range(self.rows)]
 
@@ -261,5 +260,6 @@ def main():
         pygame.display.update()
 
 
-main()
-pygame.quit()
+if __name__ == '__main__':
+    main()
+    pygame.quit()

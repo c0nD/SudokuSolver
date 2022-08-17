@@ -13,7 +13,7 @@ def solve_sudoku(board):
     else:
         row, col = found
 
-    for i in range(1,10):
+    for i in range(1,10): # 1-9 inclusive
         if valid(board, i, (row, col)):
             board[row][col] = i
 
